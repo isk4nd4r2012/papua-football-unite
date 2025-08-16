@@ -138,7 +138,7 @@ const ContributionLevels = () => {
                   {level.name}
                 </CardTitle>
                 <CardDescription className="text-2xl font-bold text-primary">
-                  Rp {level.amount}
+                  Rp {parseInt(level.amount.replace(/\./g, '')).toLocaleString('id-ID')}
                 </CardDescription>
               </CardHeader>
               
